@@ -2,6 +2,8 @@
 --//                                                             //
 --// SLMPS - Simplify Library for Michyo's Programming Seminar   //
 --//                                                             //
+--//                                                Version 0.02 //
+--//                                                             //
 --//                  Copyright (C) 2022 michyo (Michiyo Tagami) //
 --//                                                             //
 --// Released under THE MOUSE LICENSE                            //
@@ -37,8 +39,8 @@ function draw(drawable, x, y, r, sx, sy, ox, oy, kx, ky)
   love.graphics.draw(drawable, x, y, r, sx, sy, ox, oy, kx, ky)
 end
 
-function circle(mode, x, y, radius)
-  love.graphics.circle(mode, x, y, radius)
+function circle(mode, x, y, radius, segments)
+  love.graphics.circle(mode, x, y, radius, segments)
 end
 
 function bgcolor(red, green, blue, alpha)
@@ -53,10 +55,10 @@ function inkey(key)
   return love.keyboard.isDown(key)
 end
 
-function clip(x, min, max)
-  if (x<min) then x = min end
-  if (x>max) then x = max end
-  return x
+function clip(var, min, max)
+  if (var<min) then var = min end
+  if (var>max) then var = max end
+  return var
 end
 
 function random(min, max)

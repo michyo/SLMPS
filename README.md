@@ -23,6 +23,10 @@ Version History
 
 * Initial release
 
+#### 0.02 (2022/07/23): - Current Version
+
+* Circle segments added
+
 License
 -------
 
